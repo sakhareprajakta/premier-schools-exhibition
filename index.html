@@ -77,9 +77,7 @@
       <aside id="registration-form" class="hero__form-container">
     <form class="enquiry-form" action="#" method="POST">
         <h2 class="enquiry-form__title">Enquire Now</h2>
-    <!-- <form class="enquiry-form" action="#" method="POST">
-        <h2 class="enquiry-form__title">Enquire Now</h2>
-         -->
+    
         <div class="enquiry-form__group">
             <label for="name" class="sr-only">Parent's Name</label>
             <input type="text" id="name" name="name" class="enquiry-form__input" placeholder="Parent's Name" required>
@@ -153,7 +151,7 @@
 
 <section class="schools" aria-labelledby="schools-title">
     <h2 id="schools-title" class="schools__title">Participating Schools</h2>
-    
+    <div class="selection__grid" id="selection-slider"></div>
     <div class="schools__marquee-container">
         
         <div class="schools__row schools__row--ltr">
@@ -175,7 +173,7 @@
               
             </div>
         </div>
-
+</div>
     </div>
 </section>
 
@@ -252,8 +250,6 @@
     </div>
 </section>
 
-
-
 <section class="exhibition" aria-labelledby="exhibition-title">
     <div class="exhibition__container">
         
@@ -262,18 +258,21 @@
         <div class="exhibition__slider-window">
             <div class="exhibition__track" id="exhibition-track" aria-live="polite">
                 
-                <article class="exhibition-card" aria-roledescription="slide" aria-label="1 of 5">
+                <article class="exhibition-card" role="group" aria-roledescription="slide" aria-label="1 of 5">
                     <div class="exhibition-card__icon-wrapper">
-                       <img src="image/reading-book.png" height="50px" width="50px" border="2px" background="gray"/>
+                       <div class="exhibition-card__icon">
+                        <img src="image/feasibility.png"/ height="70px" width="70px">
+                       </div>
                     </div>
-                    
                     <h3 class="exhibition-card__heading">Interact Directly with School Heads</h3>
                     <p class="exhibition-card__text">Get answers straight from the experts</p>
                 </article>
 
                 <article class="exhibition-card" role="group" aria-roledescription="slide" aria-label="2 of 5">
                     <div class="exhibition-card__icon-wrapper">
-                         <img src="image/case-studies.png" height="50px" width="50px" border="2px" background="gray"/>
+                         <div class="exhibition-card__icon">
+                            <img src="image/case-studies.png"/ height="70px" width="70px">
+                         </div>
                     </div>
                     <h3 class="exhibition-card__heading">Compare Curriculum & Pedagogy</h3>
                     <p class="exhibition-card__text">Understand the differences between CBSE, ICSE, IB, Cambridge, Finnish & more</p>
@@ -281,7 +280,9 @@
 
                 <article class="exhibition-card" role="group" aria-roledescription="slide" aria-label="3 of 5">
                     <div class="exhibition-card__icon-wrapper">
-                         <img src="image/feasibility.png" height="50px" width="50px"  border="2px"  background="gray"/>
+                         <div class="exhibition-card__icon">
+                            <img src="image/notebook.png"/ height="70px" width="70px">
+                         </div>
                     </div>
                     <h3 class="exhibition-card__heading">Get Exclusive Fee Structures & Offers</h3>
                     <p class="exhibition-card__text">Access transparent information and avail offers</p>
@@ -289,7 +290,9 @@
 
                 <article class="exhibition-card" role="group" aria-roledescription="slide" aria-label="4 of 5">
                     <div class="exhibition-card__icon-wrapper">
-                         <img src="image/notebook.png" height="50px" width="50px" border="2px" background="gray"/>
+                         <div class="exhibition-card__icon">
+                            <img src="image/reading-book.png"/ height="70px" width="70px">
+                         </div>
                     </div>
                     <h3 class="exhibition-card__heading">Explore Schools Offerings</h3>
                     <p class="exhibition-card__text">Preview infrastructure, co-curricular, teaching methodology and culture</p>
@@ -297,7 +300,9 @@
 
                 <article class="exhibition-card" role="group" aria-roledescription="slide" aria-label="5 of 5">
                     <div class="exhibition-card__icon-wrapper">
-                          <img src="image/notebook.png" height="50px" width="50px" border="2px" background="gray"/>
+                          <div class="exhibition-card__icon">
+                            <img src="image/notebook.png"/ height="70px" width="70px">
+                          </div>
                     </div>
                     <h3 class="exhibition-card__heading">On-site Counseling</h3>
                     <p class="exhibition-card__text">Save time and obtain professional application guidance</p>
@@ -316,7 +321,6 @@
         </div>
 
     </div>
-    
     <div class="exhibition__wave-base"></div>
 </section>
 
