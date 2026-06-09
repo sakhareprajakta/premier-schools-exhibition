@@ -15,8 +15,8 @@ body {
 
 .header-nav__logo-link {
     display: inline-block;
-    width: 150px; /* Adjust based on your layout design */
-    height: 70px;  /* Adjust based on your layout design */
+    width: 150px; 
+    height: 70px;  
     background-image: url('image/photo-1669555632741-31cf41105a34logo');
     background-size: contain;
     background-repeat: no-repeat;
@@ -66,7 +66,7 @@ body {
     padding: 10px 14px;
     border-radius: 0 0 8px 8px;
     position: relative;
-    top: -5px; /* Pulls slightly upward to match brand bleed layout border edges */
+    top: -5px; 
     box-shadow: 0 4px 10px rgba(0, 75, 147, 0.2);
     text-align: center;
     width: 120px;
@@ -144,7 +144,7 @@ body {
     transition: color 0.3s ease;
 }
 
-/* --- Trigger Animations on Hover & Focus States --- */
+/* --- Animations on Hover & Focus States --- */
 .header-nav__cta:hover,
 .header-nav__cta:focus-within {
     background-color: var(--nav-dark-purple);
@@ -156,7 +156,7 @@ body {
     color: #ffffff;
 }
 
-/* The arrow performs a subtle diagonal hop rotation movement on hover */
+
 .header-nav__cta:hover .header-nav__cta-arrow,
 .header-nav__cta:focus-within .header-nav__cta-arrow {
     transform: translate(2px, -2px) scale(1.1);
@@ -181,7 +181,7 @@ body {
 
 
 :root {
-    --accent-gold: #ffcc00; /* Define base color if needed */
+    --accent-gold: #ffcc00; 
 }
 
 .hero {
@@ -190,7 +190,7 @@ body {
     display: flex;
     align-items: center;
     color: white;
-    padding: 0 5%;
+    padding: 60px 5%;
     overflow: hidden;
 }
 
@@ -202,7 +202,7 @@ body {
     width: 100%;
 }
 
-/* Typography Content Layout Section */
+
 .hero__title {
     font-size: clamp(2rem, 3.5vw, 3.2rem);
     font-weight: 700;
@@ -219,7 +219,7 @@ body {
     opacity: 0.8;
 }
 
-/* Info Pill Wrapper Design Block */
+
 .hero__info-pill {
     display: inline-flex;
     background: var(--accent-gold);
@@ -236,7 +236,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* --- Refactored Visual Columns Workspace Engine --- */
 .hero__visuals-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -247,14 +246,14 @@ body {
     align-items: center;
 }
 
-/* Individual Vertical Lane Tracking Box Layout */
+
 .hero__marquee-lane-v {
     height: 100%;
     overflow: hidden;
     position: relative;
 }
 
-/* Vertical Track Engine Transformation Loop */
+
 .hero__marquee-track-v {
     display: flex;
     flex-direction: column;
@@ -263,10 +262,10 @@ body {
     animation: infiniteVerticalScroll 18s linear infinite;
 }
 
-/* Standard Pill Geometry Structure Edge */
+
 .hero__image-mask {
     width: 100%;
-    aspect-ratio: 11 / 19; /* Fluid capsule proportional preservation aspect */
+    aspect-ratio: 11 / 19; 
     border-radius: 100px;
     overflow: hidden;
     position: relative;
@@ -283,26 +282,26 @@ body {
 /* Stagger Offset Translation Shift Configuration */
 .lane-offset .hero__marquee-track-v {
     transform: translateY(-50px);
-    animation-direction: reverse; /* Moves alternating columns in opposing paths */
+    animation-direction: reverse; 
 }
 
-/* Pause Scrolling Event Link triggers hooks */
+/* Pause Scrolling  */
 .hero__visuals-grid:hover .hero__marquee-track-v {
     animation-play-state: paused;
 }
 
-/* Continuous Calculation Dynamic Matrix translation animation loop */
+/* Continuous Calculation animation loop */
 @keyframes infiniteVerticalScroll {
     0% {
         transform: translateY(0);
     }
     100% {
-        /* Translates perfectly past half the aggregate elements (cloned margin balanced) */
+        /* Translates perfectly past half the aggregate elements*/
         transform: translateY(calc(-50% - 8px)); 
     }
 }
 
-/* Reduced System Animation Safety Controls */
+
 @media (prefers-reduced-motion: reduce) {
     .hero__marquee-track-v {
         animation: none;
@@ -345,25 +344,25 @@ body {
 }
 .enquiry-form__submit {
     display: inline-flex;
-    align-items: stretch; /* Forces both blocks to stay the same height */
+    align-items: stretch; 
     justify-content: flex-start;
-    padding: 0;           /* Clear default padding to let inner elements fill space */
+    padding: 0;          
     background: transparent;
-    border: 1.5px solid #ffffff; /* Crisp white framing outer border */
-    border-radius: 0px;   /* Perfectly sharp rectangular corners */
+    border: 1.5px solid #ffffff; 
+    border-radius: 0px;   
     cursor: pointer;
-    overflow: hidden;     /* Ensures content stays cleanly within borders */
+    overflow: hidden;    
     transition: background-color 0.2s ease;
 }
 
-/* Left side: Pure white block holding the arrow icon */
+
 .enquiry-form__submit-icon-wrapper {
     background-color: #ffffff;
-    color: #2b1055;       /* Matches your dark purple background theme color */
+    color: #2b1055;       
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 16px;   /* Adjust sizing values to match visual density */
+    padding: 12px 16px;   
 }
 
 .enquiry-form__submit-icon {
@@ -372,7 +371,7 @@ body {
     line-height: 1;
 }
 
-/* Right side: Styled textual button container block */
+/* Styled textual button container block */
 .enquiry-form__submit-text {
     color: #ffffff;
     font-size: 0.85rem;
@@ -382,7 +381,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 32px;      /* Generous horizontal whitespace padding for text */
+    padding: 0 32px;    
 }
 
 /* Hover effect state */
@@ -407,7 +406,7 @@ body {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .hero__visuals { display: none; } /* Hide visuals on small tablet/mobile per common patterns */
+    .hero__visuals { display: none; }
     .hero__info-pill { flex-direction: column; border-radius: 20px; }
 }
 
@@ -443,17 +442,17 @@ body {
     align-items: center;
 }
 
-/* Wreath Framing Container */
+
 .stats__wreath-wrapper {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 45px; /* Creates explicit safe space for the side graphics */
+    padding: 0 45px; 
     min-height: 100px;
 }
 
-/* Base style for both left and right wreaths using an encoded inline SVG */
+/*  both left and right  encoded inline SVG */
 .stats__wreath-wrapper::before,
 .stats__wreath-wrapper::after {
     content: "";
@@ -463,17 +462,17 @@ body {
     height: 110px;
     background-repeat: no-repeat;
     background-size: contain;
-    /* Inline elegant gold laurel branch SVG */
+    
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 72'%3E%3Cpath d='M12 70c-2-4-5-10-5-16s2-12 4-18c-3-2-7-1-9-4s-1-7 1-9c3 2 4 6 3 9 3-2 5-6 5-10s-2-9-1-12c3 2 3 7 1 10 3-3 6-7 6-12S13 0 14 0c2 3 0 8-2 11 3 1 5 4 5 8s-3 8-5 10c3 3 5 7 5 12s-3 11-5 14c2 4 3 9 2 13s-4 8-6 11c1-3 1-6 0-9z' fill='%23fcdcb4'/%3E%3C/svg%3E");
 }
 
-/* Position Left Wreath */
+
 .stats__wreath-wrapper::before {
     left: 0;
     transform: translateY(-50%);
 }
 
-/* Position and mirror-flip Right Wreath */
+
 .stats__wreath-wrapper::after {
     right: 0;
     transform: translateY(-50%) scaleX(-1);
@@ -536,7 +535,7 @@ body {
 .schools__marquee-container {
     display: flex;
     flex-direction: column;
-    gap: 24px; /* Distinct gap between Row 1 and Row 2 */
+    gap: 24px;
 }
 
 .schools__row {
@@ -553,7 +552,6 @@ body {
     padding: 4px;
 }
 
-/* Base Card Styling exactly like your Figma Screenshot */
 .schools__card {
     flex: 0 0 auto;
     width: 240px;
@@ -574,40 +572,27 @@ body {
     object-fit: contain;
 }
 
-/* Interaction Focus states */
 .schools__card:hover {
     border-color: #cbd5e1;
     transform: translateY(-2px);
 }
 
-/* Row 1: Left to Right Loop Setup */
+
 .schools__row--ltr .schools__track {
     animation: marqueeLTR 25s linear infinite;
 }
 
-/* Row 2: Right to Left Loop Setup */
+
 .schools__row--rtl .schools__track {
     animation: marqueeRTL 25s linear infinite;
 }
 
-/* PAUSE ON HOVER/FOCUS CRITERIA */
+
 .schools__row:hover .schools__track,
 .schools__row:focus-within .schools__track {
     animation-play-state: paused;
 }
 
-/* Keyframes for Continuous Loop without jumping gaps */
-/* @keyframes marqueeLTR {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
-} */
-
-/* @keyframes marqueeRTL {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-} */
-
-/* Accessibility: honor user settings if they have animations turned off */
 @media (prefers-reduced-motion: reduce) {
     .schools__row .schools__track {
         animation: none !important;
@@ -704,7 +689,7 @@ body {
     border-radius: 4px;
 }
 
-/* --- MOBILE RESPONSIVE SLIDER RULES --- */
+
 @media (max-width: 1024px) {
     .selection__grid {
         display: flex;
@@ -715,13 +700,13 @@ body {
         -webkit-overflow-scrolling: touch;
     }
 
-    /* Hide standard modern browser scrollbars to preserve style aesthetic */
+  
     .selection__grid::-webkit-scrollbar {
         display: none;
     }
 
     .school-card {
-        flex: 0 0 82%; /* Preview part of the next item card right down the viewport line */
+        flex: 0 0 82%; 
         scroll-snap-align: center;
         height: 380px;
     }
@@ -748,7 +733,6 @@ body {
     position: relative;
 }
 
-/* Master Grid Container separating Text and Image */
 .appointment__container {
     display: grid;
     grid-template-columns: 1.1fr 1fr;
@@ -758,7 +742,7 @@ body {
     background: linear-gradient(90deg, #dfcbff 0%, #ecdfff 100%);
 }
 
-/* Content Area Layout and Padding */
+
 .appointment__content {
     display: flex;
     flex-direction: column;
@@ -791,7 +775,7 @@ body {
     margin-bottom: 35px;
 }
 
-/* --- Precise Custom Button Construction --- */
+
 .appointment__cta {
     display: inline-flex;
     align-items: center;
@@ -825,13 +809,13 @@ body {
     padding: 0 24px;
 }
 
-/* Hover State Interactions */
+
 .appointment__cta:hover {
     box-shadow: 0 4px 15px rgba(31, 11, 64, 0.15);
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* --- Image Mask Fade Setup --- */
+
 .appointment__visual {
     position: relative;
     background-image: url('image/premium_photo-1661763874747-405eb7388c58.avif');
@@ -839,7 +823,7 @@ body {
     background-position: center;
 }
 
-/* Overlay gradient creates the smooth color bleed into the photo from the left side */
+
 .appointment__visual::before {
     content: '';
     position: absolute;
@@ -851,7 +835,7 @@ body {
     pointer-events: none;
 }
 
-/* --- Mobile Device Breakdown --- */
+
 @media (max-width: 992px) {
     .appointment__container {
         grid-template-columns: 1fr;
@@ -859,7 +843,7 @@ body {
     
     .appointment__content {
         padding: 50px 6%;
-        order: 1; /* Keep text primary readable position on screens stacked vertically */
+        order: 1;
     }
 
     .appointment__visual {
@@ -867,7 +851,7 @@ body {
         order: 2;
     }
 
-    /* Alter fade gradient vector for vertical card stacking layout rules */
+    
     .appointment__visual::before {
         background: linear-gradient(180deg, #ecdfff 0%, rgba(236, 223, 255, 0) 100%);
     }
@@ -920,7 +904,7 @@ body {
 
 /* Card Styling with Uniform Heights */
 .exhibition-card {
-    flex: 0 0 calc(25% - 18px); /* 4 visible items per viewport screen window */
+    flex: 0 0 calc(25% - 18px);
     background-color: var(--card-lavender);
     border-radius: 16px;
     padding: 32px 24px;
@@ -934,7 +918,7 @@ body {
     margin-bottom: 24px;
 }
 
-/* Placeholder box configuration for the purple icons */
+
 .exhibition-card__icon {
     width: 40px;
     height: 40px;
@@ -960,7 +944,7 @@ body {
     margin: 0;
 }
 
-/* Navigation Buttons Placement */
+
 .exhibition__controls {
     display: flex;
     justify-content: center;
@@ -992,7 +976,7 @@ body {
     font-weight: bold;
 }
 
-/* Angled dynamic bottom wave vector shape divider */
+
 .exhibition__wave-base {
     position: absolute;
     bottom: 0;
@@ -1003,22 +987,22 @@ body {
     clip-path: polygon(0 100%, 100% 100%, 100% 40%, 0 0);
 }
 
-/* --- Breakpoint Media Matrix --- */
+
 @media (max-width: 1200px) {
     .exhibition-card {
-        flex: 0 0 calc(33.333% - 16px); /* 3 cards displayed */
+        flex: 0 0 calc(33.333% - 16px); 
     }
 }
 
 @media (max-width: 768px) {
     .exhibition-card {
-        flex: 0 0 calc(50% - 12px); /* 2 cards displayed */
+        flex: 0 0 calc(50% - 12px); 
     }
 }
 
 @media (max-width: 480px) {
     .exhibition-card {
-        flex: 0 0 100%; /* 1 full card width centered on mobile views */
+        flex: 0 0 100%; 
     }
 }
 
@@ -1046,7 +1030,7 @@ body {
     color: var(--footer-text-light);
 }
 
-/* Linear background gradient matching the top panel */
+
 .footer-body {
     background: linear-gradient(180deg, var(--footer-purple-light) 0%, var(--footer-purple-dark) 100%);
     padding: 60px 4%;
@@ -1061,13 +1045,12 @@ body {
     gap: 32px;
 }
 
-/* Logo brand structural box positioning */
 .footer-brand-section {
     flex: 0 1 auto;
 }
 
 .footer-logo-badge {
-    background-color: #0c5ca7; /* Deep ocean corporate blue block color tint */
+    background-color: #0c5ca7; 
     color: #fff;
     padding: 12px 16px;
     font-weight: 700;
@@ -1079,7 +1062,7 @@ body {
     text-align: center;
 }
 
-/* Individual Content Columns blocks mapping logic */
+
 .footer-card {
     display: flex;
     gap: 16px;
@@ -1092,7 +1075,7 @@ body {
     flex: 0 1 200px;
 }
 
-/* Rounded square background wrappers behind icons */
+
 .footer-icon-wrapper {
     width: 44px;
     height: 44px;
@@ -1145,7 +1128,7 @@ body {
     color: var(--footer-text-light);
 }
 
-/* Social Icon Row Systems configuration */
+
 .footer-social-row {
     display: flex;
     gap: 12px;
@@ -1173,7 +1156,7 @@ body {
     background-color: #ffffff;
 }
 
-/* Bottom copyright panel row utility layout specifications */
+
 .footer-bottom-panel {
     background-color: #ffffff;
     padding: 20px 4%;
@@ -1187,7 +1170,7 @@ body {
     font-weight: 500;
 }
 
-/* Responsive Adaptive Viewport Matrix Breakdown Grid adjustments */
+
 @media (max-width: 1024px) {
     .footer-grid {
         display: grid;
@@ -1211,7 +1194,7 @@ body {
 }
 
 
-/* --- Call To Action Navigation Elements --- */
+
 .register-button {
     display: inline-flex;
     align-items: center;

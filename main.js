@@ -1,16 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     
-    // ==========================================
-    // 1. HERO SECTION: PAUSE ON HOVER
-    // ==========================================
- 
-
 
 
 const heroSection = document.querySelector('.hero');
 
     if (heroSection) {
-        // Pause on Hover Logic interacts flawlessly with the updated loop
+        
         heroSection.addEventListener('mouseenter', () => {
             heroSection.classList.add('is-paused');
         });
@@ -32,9 +27,7 @@ const heroSection = document.querySelector('.hero');
 
 
 
-    // ==========================================
-    // 2. HERO DUAL-AXIS SLIDER EFFECT
-    // ==========================================
+   
     let currentSlide = 0;
     
     function rotateImages() {
@@ -47,9 +40,7 @@ const heroSection = document.querySelector('.hero');
 
     setInterval(rotateImages, 3000);
 
-    // ==========================================
-    // 3. FORM SUBMISSION HANDLER
-    // ==========================================
+    
     const form = document.querySelector('.enquiry-form');
     if (form) {
         form.addEventListener('submit', (e) => {
@@ -59,9 +50,7 @@ const heroSection = document.querySelector('.hero');
         });
     }
 
-    // ==========================================
-    // 4. CHOOSE SCHOOL CARDS: MOBILE SCROLL TRACKER
-    // ==========================================
+    
     const track = document.getElementById('selection-slider');
     const dots = document.querySelectorAll('.selection__dot');
 
@@ -82,9 +71,7 @@ const heroSection = document.querySelector('.hero');
         }, { passive: true });
     }
 
-    // ==========================================
-    // 5. REGISTER BUTTON: SMOOTH SCROLL (MOVED INSIDE)
-    // ==========================================
+    
     const registerBtn = document.getElementById('register-btn');
 
     if (registerBtn) {
@@ -101,7 +88,7 @@ const heroSection = document.querySelector('.hero');
                     const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
                     
                     window.scrollTo({
-                        top: targetPosition - navHeight - 20, // Clean breathing space gap offset
+                        top: targetPosition - navHeight - 20, 
                         behavior: 'smooth'
                     });
                 }
